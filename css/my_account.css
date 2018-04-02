@@ -1,0 +1,571 @@
+body
+        {
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+
+        #profile
+        {
+            margin-left: 85px; 
+            text-align: left; 
+            margin-bottom: 10px;
+        }
+        .row1
+        {
+            display: table;
+            width: 100%;
+        }
+
+        select
+        {
+            outline:none;
+            border:1px solid #DFDFDF;
+            background:#f5f5f5;
+            padding:10px;
+            color:#212121;
+            width:100%;
+            font-size:14px;
+            margin: .5em 0 0;
+        }
+
+        
+
+        .col-md-5
+        {
+            display: table-cell;
+            vertical-align: middle;
+            font-size: 14px;
+            color:#3c43a4;
+            max-width: 30%;
+            margin-right: 20px;
+            text-align: center;
+            -webkit-box-shadow: -webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+            -moz-box-shadow:    3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
+            box-shadow:         3px 3px 5px 6px #ccc;
+
+            -webkit-transition: .5s all;
+            -moz-transition: .5s all;
+            -o-transition: .5s all;
+            -ms-transition: .5s all;
+        }
+
+        .col-md-5 img
+        {
+            max-width: 150px;
+            min-width: 150px;
+            margin: auto;
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 50%;
+        }
+
+
+
+
+        .col-md-7
+        {
+            display: table-cell;
+            vertical-align: top;
+            color: #3c43a4;
+            text-align: center;
+            -webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+            -moz-box-shadow:    3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
+            box-shadow:         3px 3px 5px 6px #ccc;
+        }
+
+        #label_td
+        {
+            width: 30%;
+            font-size: 14px;
+        }
+
+        @media screen and (max-width: 1000px)
+        {
+            #profile
+            {
+                margin-left: 5px;
+            }
+            .row1
+            {
+                margin-top: 60px;
+            }
+        }
+
+        @media screen and (max-width: 600px) 
+        {
+            .row1
+            {
+                display: block;
+                margin-top: 20px;
+            }
+            #profile
+            {
+                margin: auto;
+                text-align: center;
+            }
+
+            .col-md-5, .col-md-7 
+            {
+                display: inline-block;
+            }
+        }
+
+        @media screen and (max-width: 600px) 
+        {
+            .row1
+            {
+                display: block;
+                margin-top: 30px;
+            }
+        }
+
+
+
+        @media only screen and (max-width: 600px) 
+        {
+            .col-md-5
+            {
+                font-size: 14px;
+                color: #3c43a4;
+                min-width: 100%;
+                margin-right: 20px;
+                text-align: center;
+                -webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+                -moz-box-shadow:    3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
+                box-shadow:         3px 3px 5px 6px #ccc;
+
+                -webkit-transition: .5s all;
+                -moz-transition: .5s all;
+                -o-transition: .5s all;
+                -ms-transition: .5s all;
+            }
+            .col-md-7
+            {
+                font-size: 14px;
+                color: #3c43a4;
+                min-width: 100%;
+                margin-right: 20px;
+                text-align: center;
+                -webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+                -moz-box-shadow:    3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
+                box-shadow:         3px 3px 5px 6px #ccc;
+
+                -webkit-transition: .5s all;
+                -moz-transition: .5s all;
+                -o-transition: .5s all;
+                -ms-transition: .5s all;
+            }
+            .mail
+            {
+                margin-top: 10px;
+            }
+            #file_upload
+            {
+                border: 1px solid #ccc; 
+                border-radius: 5px; 
+                margin-bottom: 10px;
+                margin: 10px auto;
+                max-width: 100%;
+            }
+            #not_verified
+            {
+                width: 100%;
+            }
+            #verified
+            {
+                width: 100%;
+            }
+            #label_td
+            {
+                width: 40%;
+            }
+        }
+
+        #changePass
+        {
+            list-style: none;
+            background: white;
+            border: none;
+            text-align: left;
+            padding: 0px;
+            color: #919090;
+            font-family:'Open Sans', sans-serif;
+            font-size: 14px;
+        }
+        #changePass:hover
+        {
+            color: #C70039;
+        }
+
+        /* The Modal (background) */
+        .modal 
+        {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+            font-family:'Open Sans', sans-serif;
+        }
+        .modal-title
+        {
+            text-align: center;
+            width: 90%;
+            margin: auto;
+            padding: 15px;
+            color: #3c43a4;
+        }
+
+        /* Modal Content/Box */
+        .modal-content 
+        {
+            background-color: #fefefe;
+            margin: 0 auto; /* 5% from the top, 15% from the bottom and centered */
+            border: 1px solid #888;
+            width: 60%; /* Could be more or less, depending on screen size */
+        }
+
+        /* The Close Button (x) */
+        .close 
+        {
+            position: absolute;
+            right: 15px;
+            top: 0;
+            color: #000;
+            font-size: 35px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus 
+        {
+            color: red;
+            cursor: pointer;
+        }
+
+        /* Add Zoom Animation */
+        .animate 
+        {
+            -webkit-animation: animatezoom 0.6s;
+            animation: animatezoom 0.6s
+        }
+
+        @-webkit-keyframes animatezoom 
+        {
+            from {-webkit-transform: scale(0)} 
+            to {-webkit-transform: scale(1)}
+        }
+            
+        @keyframes animatezoom {
+            from {transform: scale(0)} 
+            to {transform: scale(1)}
+        }
+
+        /* Change styles for span and cancel button on extra small screens */
+        @media screen and (max-width: 600px) 
+        {
+            span.psw 
+            {
+               display: block;
+               float: none;
+            }
+            .cancelbtn 
+            {
+               width: 80%;
+            }
+            .modal-title
+            {
+                width: 100%;
+            }
+            .modal-content 
+            {
+                width: 100%; /* Could be more or less, depending on screen size */
+            }
+            #changePassModal
+            {
+                width: 100%;
+            }
+        }
+
+
+
+
+
+        /* Generic Styling, for Desktops/Laptops (my_products table) */
+        #vendor_products 
+        { 
+            font-family:'Open Sans', sans-serif;           
+            font-size: 13px;
+            width: 100%; 
+            border-collapse: collapse; 
+            text-align: left;
+        }
+        #vendor_products tr:hover
+        {
+            background-color: #f5f5f5;
+        }
+        #vendor_products td, #vendor_products th
+        {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;          
+        }
+
+        /* Zebra striping */
+        #vendor_products tr:nth-of-type(odd) 
+        { 
+            background: #eee; 
+        }
+        #vendor_products th
+        {
+            background: #3c43a4;
+            color: white;
+            font-family:'Open Sans', sans-serif;
+            font-size: 14px;
+            font-weight: normal;
+        }
+        #proQty
+        {
+            text-align: center;
+            vertical-align: middle;
+        }
+        #proImg
+        {
+            text-align: center;
+            vertical-align: middle;
+        }
+        .circular 
+        {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            position: relative;
+            overflow: hidden;
+        }
+        .circular img
+        {
+            min-width: 100%;
+            min-height: 100%;
+            width: 100%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+
+        /* ESTABLISHING RESPONSIVENESS FOR PRODUCTS TABLE */
+        /* 
+        Max width before this PARTICULAR table gets nasty
+        This query will take effect for any screen smaller than 760px
+        and also iPads specifically.
+        */
+        @media 
+        only screen and (max-width: 600px),
+        (min-device-width: 768px) and (max-device-width: 1024px)  
+        {
+        
+            /* Force table to not be like tables anymore */
+            #vendor_products, #vendor_products thead, #vendor_products tbody, #vendor_products th, #vendor_products td, #vendor_products tr { 
+                display: block; 
+            }
+            
+            /* Hide table headers (but not display: none;, for accessibility) */
+            #vendor_products thead tr { 
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+            }
+
+            #proQty
+            {
+                text-align: left;
+            }
+            #proImg
+            {
+                text-align: left;
+            }
+            #vendor_products tr 
+            { 
+                border: 1px solid #ccc; 
+            }
+
+            
+            #vendor_products td { 
+                /* Behave  like a "row" */
+                border: none;
+                border-bottom: 1px solid #eee; 
+                position: relative;
+                padding-left: 50%; 
+                vertical-align: middle;
+            }
+            
+            #vendor_products td:before { 
+                /* Now like a table header */
+                position: absolute;
+                /* Top/left values mimic padding */
+                left: 6px;
+                width: 45%; 
+                padding-right: 10px; 
+                white-space: nowrap;
+            }
+            
+            /*
+            Label the data
+            */
+            #vendor_products td:nth-of-type(1):before { content: "Product Code"; }
+            #vendor_products td:nth-of-type(2):before { content: "Product Name"; }
+            #vendor_products td:nth-of-type(3):before { content: "Product Price"; }
+            #vendor_products td:nth-of-type(4):before { content: "Product Image"; }
+            #vendor_products td:nth-of-type(5):before { content: "Qty"; }
+            #vendor_products td:nth-of-type(6):before { content: "Edit Product"; }
+            #vendor_products td:nth-of-type(7):before { content: "Delete"; }
+        }
+        
+        /* Smartphones (portrait and landscape) ----------- */
+        @media only screen
+        and (min-device-width : 320px)
+        and (max-device-width : 480px) {
+            body { 
+                padding: 0; 
+                margin: 0; 
+                width: 320px; }
+            }
+        
+        /* iPads (portrait and landscape) ----------- */
+        @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+            body 
+            { 
+                width: 495px; 
+            }
+        }
+
+
+
+
+
+
+        /* STYLING BUTTONS */
+        .button
+        {
+          border: none;
+          border-radius: 50px;
+        }
+        .text 
+        {
+            padding-top: 50px;
+            font-family:'Open Sans', sans-serif;
+        }
+        .text:hover
+        {
+          cursor: pointer;
+          color: #1565C0;
+        }
+        .icon-button {
+          background-color: white;
+          border-radius: 2.6rem;
+          cursor: pointer;
+          display: inline-block;
+          font-size: 1rem;
+          height: 2.6rem;
+          line-height: 2.6rem;
+          margin: 0 5px;
+          position: relative;
+          text-align: center;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+          width: 2.6rem;
+        }
+
+        .icon-button span {
+          border-radius: 0;
+          display: block;
+          height: 0;
+          left: 50%;
+          margin: 0;
+          position: absolute;
+          top: 52%;
+          -webkit-transition: all 0.3s;
+          -moz-transition: all 0.3s;
+          -o-transition: all 0.3s;
+          transition: all 0.3s;
+          width: 0;
+        }
+        .icon-button:hover span {
+          width: 2.6rem;
+          height: 2.6rem;
+          border-radius: 2.6rem;
+          margin: -1.3rem;
+        }
+        .twitter span {
+          background-color: #4099ff;
+        }
+        /* Icons */
+        .icon-button i {
+          background: none;
+          color: #4099ff;
+          height: 2.8rem;
+          left: 0;
+          line-height: 2.6rem;
+          position: absolute;
+          top: 2px;
+          -webkit-transition: all 0.3s;
+          -moz-transition: all 0.3s;
+          -o-transition: all 0.3s;
+          transition: all 0.3s;
+          width: 2.8rem;
+          z-index: 10;
+        }
+        .icon-button:hover i {
+          background: none;
+          color: white;
+          height: 2.9rem;
+          left: 0;
+          line-height: 2.6rem;
+          position: absolute;
+          top: 0;
+          -webkit-transition: all 0.3s;
+          -moz-transition: all 0.3s;
+          -o-transition: all 0.3s;
+          transition: all 0.3s;
+          width: 2.9rem;
+          z-index: 10;
+        }
+        .icon-button .icon-twitter {
+          color: #4099ff;
+        }
+        .icon-button:hover .icon-twitter {
+          color: white;
+        }
+
+        #edit
+        {
+            list-style: none;
+            padding: 0px;
+            color: #919090;
+            font-family:'Open Sans', sans-serif;
+            font-size: 14px;
+        }
+        #edit:hover
+        {
+            color: #C70039;
+        }
+
+        #edit_label
+        {
+            font-weight: 200;
+            font-size: 14px;
+            color: #3c43a4;
+        }

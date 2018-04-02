@@ -1,0 +1,22 @@
+/* 
+	Generic Styling, for Desktops/Laptops 
+	*/
+	#vendor_products 
+	{ 
+		width: 100%; 
+		border-collapse: collapse; 
+	}
+	/* Zebra striping */
+	#vendor_products tr:nth-of-type(odd) { 
+		background: #eee; 
+	}
+	#vendor_products th { 
+		background: #333; 
+		color: white; 
+		font-weight: bold; 
+	}
+	#vendor_products td, #vendor_products th { 
+		padding: 6px; 
+		border: 1px solid #ccc; 
+		text-align: left; 
+	}

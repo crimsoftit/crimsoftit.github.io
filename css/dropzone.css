@@ -234,8 +234,8 @@
       left: 0;
       opacity: 0;
       font-size: 13px;
-      min-width: 50%;
-      max-width: 50%;
+      min-width: 100%;
+      max-width: 100%;
       padding: 2em 1em;
       text-align: center;
       color: rgba(0, 0, 0, 0.9);
