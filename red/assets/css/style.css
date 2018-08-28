@@ -14,20 +14,38 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	font-family:"Century Gothic";
 	font-style:normal;
 	font-weight:400;
-	src:local("Arvo"), url("../fonts/arvo-400.woff") format("woff");
 }
-@font-face{font-family:"Century Gothic"; font-style:normal; font-weight:400; src:local("Allerta Regular"), local("Allerta-Regular"), url("../fonts/allerta-400.woff") format("woff");}
+@font-face
+{
+	font-family:"Century Gothic"; 
+	font-style:normal; 
+	font-weight:400; 
+	src:local("Allerta Regular"), local("Allerta-Regular"), url("../fonts/allerta-400.woff") format("woff");
+}
 
 body
 {
-	background-color:#fff;
-	color:#333;
+	background-color: #fff;
+	color: #333;
 	font-family: Century Gothic;
 	overflow-x:hidden !important
 }
-ul{padding:0; margin:0; list-style:none}
-a{text-decoration:none; color:#2f2f2f; font-family:'Century Gothic',sans-serif}
-a:hover{color:#646464; text-decoration:none}
+ul
+{
+	padding:0; 
+	margin:0; 
+	list-style:none;
+}
+a
+{
+	text-decoration:none; 
+	color: white; 
+	font-family:Century Gothic;
+}
+a:hover
+{
+	color:#646464; text-decoration:none;
+}
 a:focus{outline:none; text-decoration:none}
 h1, h2, h3, h4, h5, h6{font-family:'Century Gothic',serif}
 h2{line-height:23px}
@@ -55,22 +73,86 @@ img:hover{opacity:0.75}
 .btn-blue:hover{background-color:#0707a2; color:#fff}
 .btn-lime{background-color:lime; color:#fff}
 .btn-lime:hover{background-color:#05ae05; color:#fff}
-.default-btn{background-color:#12a3df; color:#fff}
+.default-btn{background-color:#FC8467; color:#fff}
 .default-btn:hover{background-color:#0a8ec4; color:#fff}
 .transition{-webkit-transition:all 0.5s; -moz-transition:all 0.5s; -ms-transition:all 0.5s; -o-transition:all 0.5s; transition:all 0.5s}
 #preloader{position:fixed; top:0; left:0; right:0; bottom:0; background-color:#fff; z-index:99}
 #status{width:200px; height:200px; position:absolute; left:50%; top:50%; background-image:url("images/status.gif"); background-repeat:no-repeat; background-position:center; margin:-100px 0 0 -100px}
-.scrollToTop{bottom:105px; display:none; font-size:32px; font-weight:bold; height:50px; position:fixed; right:75px; text-align:center; text-decoration:none; width:50px; z-index:9; border:1px solid; -webkit-transition:all 0.5s; -moz-transition:all 0.5s; -ms-transition:all 0.5s; -o-transition:all 0.5s; transition:all 0.5s}
-.scrollToTop:hover, .scrollToTop:focus{text-decoration:none; outline:none}
-#header{box-shadow:0 0 8px 5px rgba(0,0,0,0.2); display:inline; float:left; left:0; position:fixed; right:0; top:0; width:100%; z-index:100}
-.navbar{margin-bottom:0}
-.custom_nav li a{}
-.navbar-default .navbar-nav > li > a{color:#fff; -webkit-transition:all 0.5s; -moz-transition:all 0.5s; -ms-transition:all 0.5s; -o-transition:all 0.5s; transition:all 0.5s}
+
+.scrollToTop
+{
+	bottom:105px; 
+	display:none; 
+	font-size:32px; 
+	font-weight:bold;
+	height:50px; 
+	position:fixed; 
+	right:75px; 
+	text-align:center; 
+	text-decoration:none; 
+	width:50px; 
+	z-index:9; 
+	border:1px solid; 
+	background: #FC8467;
+	-webkit-transition:all 0.5s; 
+	-moz-transition:all 0.5s; 
+	-ms-transition:all 0.5s; 
+	-o-transition:all 0.5s; 
+	transition:all 0.5s;
+}
+.scrollToTop:hover, .scrollToTop:focus
+{
+	text-decoration:none; 
+	outline:none;
+	color: #FC8467;
+}
+#header
+{
+	box-shadow:0 0 8px 5px rgba(0,0,0,0.2); 
+	display:inline; 
+	float:left; 
+	left:0; 
+	position:fixed; 
+	right:0; 
+	top:0; 
+	width:100%; 
+	z-index:100;
+
+}
+.navbar
+{
+	margin-bottom:0;
+	background: #FC8467;
+}
+.custom_nav li a
+{
+	color: #FC8467;
+}
+.navbar-default .navbar-nav > li > a
+{
+	color:#fff; 
+	-webkit-transition:all 0.5s; 
+	-moz-transition:all 0.5s; 
+	-ms-transition:all 0.5s; 
+	-o-transition:all 0.5s; 
+	transition:all 0.5s;
+}
 .navbar-default .navbar-brand{color:#fff; font-weight:bold; font-family:'Allerta',Helvetica,Arial,sans-serif; padding:0px 15px}
 .navbar-default .navbar-brand img:hover{opacity:1}
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{background-color:#fff}
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus{background-color:#fff}
-.dropdown-menu li a{color:#fff}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus
+{
+	background-color:#fff;
+    color: #FC8467;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus
+{
+	background-color:#fff;
+	color: #FC8467;
+}
+.dropdown-menu li a
+{
+	color:#fff;
+}
 .navbar-collapse{float:left; position:relative; width:86%}
 .search{float:right; position:relative}
 .search_icon i{background:none repeat scroll 0 0 #fff; display:block; float:right; height:30px; line-height:30px; margin-top:10px; text-align:center; width:30px}
@@ -98,9 +180,28 @@ figure.effect-lily a:hover img{-webkit-transform:translate3d(0,0,0); transform:t
 .featured_slider{float:left; display:inline; width:100%}
 .single_iteam{float:left; display:inline; width:100%; position:relative}
 .single_iteam img{border-radius:5px; width:100%}
-.single_iteam > h2{bottom:10%; left:0; position:absolute; right:0; text-align:center; width:100%}
-.slider_tittle{background:none repeat scroll 0 0 rgba(0,0,0,0.4); color:#fff; display:inline-block; font-size:15px; line-height:18px; padding:10px}
-.slider_tittle:hover, .slider_tittle:focus{color:#fff}
+.single_iteam > h2
+{
+	bottom:10%; 
+	left:0; 
+	position:absolute; 
+	right:0; 
+	text-align:center; 
+	width:100%;
+}
+
+.slider_tittle
+{
+	background:none repeat scroll 0 0 rgba(0,0,0,0.4); 
+	display:inline-block; 
+	font-size:15px; 
+	line-height:18px; 
+	padding:10px
+}
+.slider_tittle:hover, .slider_tittle:focus
+{
+	color: #8E8A89;
+}
 .featured_nav{}
 .featured_nav li{border-bottom:1px dashed #ddd; display:inline; float:left; margin-bottom:30px; width:100%}
 .featured_nav li p{line-height:1.5em}
