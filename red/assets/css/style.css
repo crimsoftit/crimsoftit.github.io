@@ -1,27 +1,4 @@
-/*
-Template Name: Cyber Tech
-Template URI: http://www.wpfreeware.com/cyber-tech-beautiful-magazine-wordpress-theme/
-Author: WpFreeware
-Author URI: http://www.wpfreeware.com
-Description: A responsive html5 bootstrap blog,news,magazine template
-Version: 1.0 
-License: GPL
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-*/
 
-@font-face
-{
-	font-family:"Century Gothic";
-	font-style:normal;
-	font-weight:400;
-}
-@font-face
-{
-	font-family:"Century Gothic"; 
-	font-style:normal; 
-	font-weight:400; 
-	src:local("Allerta Regular"), local("Allerta-Regular"), url("../fonts/allerta-400.woff") format("woff");
-}
 
 body
 {
@@ -47,7 +24,10 @@ a:hover
 	color:#646464; text-decoration:none;
 }
 a:focus{outline:none; text-decoration:none}
-h1, h2, h3, h4, h5, h6{font-family:'Century Gothic',serif}
+h1, h2, h3, h4, h5, h6
+{
+	font-family: Century Gothic;
+}
 h2{line-height:23px}
 img{border:none}
 img:hover{opacity:0.75}
@@ -162,21 +142,79 @@ img:hover{opacity:0.75}
 #content{display:inline; float:left; margin-top:75px; width:100%; margin-bottom:30px}
 .topadd_bar{height:90px; margin-bottom:20px; margin-left:auto; margin-right:auto; width:728px}
 .left_sidebar{float:left; display:inline; width:100%}
-.single_widget{display:inline; float:left; padding:0 10px 30px; width:100%; border-left:1px solid #e3e3e3; border-right:1px solid #e3e3e3; border-bottom:1px solid #e3e3e3}
-.single_widget > h2{color:#fff; font-size:19px; margin:0 0 20px -10px; padding:9px 25px; text-align:center; width:107.1%}
-.single_widget > h2 a{color:#fff; font-family:'Arvo',serif}
+.single_widget
+{
+	display:inline; 
+	float:left; 
+	padding:0 10px 30px;
+	width:100%; 
+	border-left:1px solid #e3e3e3; 
+	border-right:1px solid #e3e3e3; 
+	border-bottom:1px solid #e3e3e3;
+}
+.single_widget > h2
+{
+	background: #FC8467; 
+	color: #fff;
+	font-size:19px; 
+	margin:0 0 20px -10px; 
+	padding:9px 25px; 
+	text-align:center; 
+	width:107.1%;
+}
+.single_widget > h2 a
+{
+	color: #FC8467; 
+	font-family:Century Gothic;
+}
 .post_nav li{border-bottom:1px dashed #ddd; float:left; width:100%; margin-bottom:30px; padding-bottom:10px}
 .post_nav figure{position:relative; float:left; overflow:hidden; width:100%; text-align:center; cursor:pointer}
 .post_nav figure img{position:relative; display:block; min-height:100%; max-width:100%; opacity:0.8}
 figure.effect-lily img{max-width:none; width:-webkit-calc(100%+50px); width:calc(100%+50px); opacity:0.7; -webkit-transition:opacity 0.35s,-webkit-transform 0.35s; transition:opacity 0.35s,transform 0.35s; -webkit-transform:translate3d(-40px,0,0); transform:translate3d(-40px,0,0)}
 figure.effect-lily a:hover img{opacity:1}
 figure.effect-lily a:hover img{-webkit-transform:translate3d(0,0,0); transform:translate3d(0,0,0)}
-.post_nav figcaption a{display:block; padding:15px 15px 10px; font-size:16px}
+.post_nav figcaption a
+{
+	display:block; 
+	padding:15px 15px 10px; 
+	font-size:16px;
+	color: #8E8A89;
+}
+.post_nav figcaption a:hover
+{
+	color: #FC8467;
+}
 .ppost_nav li{float:left; display:block; width:100%; margin-bottom:10px}
 .catg_title{font-size:15px}
-.ppost_nav li .media-left{border:1px solid #ddd; padding:4px; margin-right:5px; float:left}
-.middle_content{border-bottom:1px solid #e3e3e3; border-left:1px solid #e3e3e3; border-right:1px solid #e3e3e3; display:inline; float:left; padding-bottom:25px; padding-left:10px; padding-right:10px; width:100%}
-.middle_content > h2, .featured_title{color:#fff; font-size:19px; margin:0 0 20px -10px; padding:9px 25px; text-align:center; width:103.4%}
+.ppost_nav li .media-left
+{
+	border:1px solid #ddd; 
+	padding:4px; 
+	margin-right:5px; 
+	float:left;
+}
+.middle_content
+{
+	border-bottom:1px solid #e3e3e3; 
+	border-left:1px solid #e3e3e3; 
+	border-right:1px solid #e3e3e3; 
+	display:inline; 
+	float:left; 
+	padding-bottom:25px; 
+	padding-left:10px; 
+	padding-right:10px; 
+	width:100%;
+}
+.middle_content > h2, .featured_title
+{
+	color: #fff;
+	background: #FC8467; 
+	font-size:19px; 
+	margin:0 0 20px -10px; 
+	padding:9px 25px; 
+	text-align:center; 
+	width:103.4%;
+}
 .featured_slider{float:left; display:inline; width:100%}
 .single_iteam{float:left; display:inline; width:100%; position:relative}
 .single_iteam img{border-radius:5px; width:100%}
@@ -200,29 +238,108 @@ figure.effect-lily a:hover img{-webkit-transform:translate3d(0,0,0); transform:t
 }
 .slider_tittle:hover, .slider_tittle:focus
 {
-	color: #8E8A89;
+	color: white;
 }
 .featured_nav{}
-.featured_nav li{border-bottom:1px dashed #ddd; display:inline; float:left; margin-bottom:30px; width:100%}
+.featured_nav li
+{
+	border-bottom:1px dashed #ddd; 
+	display:inline; 
+	float:left; 
+	margin-bottom:30px; 
+	width:100%;
+}
 .featured_nav li p{line-height:1.5em}
 .right_sidebar{float:left; display:inline; width:100%}
-.featured_img:hover img{opacity:1; -webkit-transform:translate3d(0,0,0) scale(1); transform:translate3d(0,0,0) scale(1)}
-.featured_img{display:block; float:left; height:300px; width:100%; overflow:hidden}
+.featured_img:hover img
+{
+	opacity:1; 
+	-webkit-transform:translate3d(0,0,0) scale(1); 
+	transform:translate3d(0,0,0) scale(1);
+}
+.featured_img
+{
+	display:block; 
+	float:left; 
+	height:300px; 
+	width:100%; 
+	overflow:hidden;
+}
 .featured_img img{height:100%; width:-webkit-calc(100%+60px); width:calc(100%+60px); opacity:1; -webkit-transition:opacity 0.35s,-webkit-transform 0.35s; transition:opacity 0.35s,transform 0.35s; -webkit-transform:translate3d(-30px,0,0) scale(1.12); transform:translate3d(-30px,0,0) scale(1.12); -webkit-backface-visibility:hidden; backface-visibility:hidden}
-.featured_article{background:none repeat scroll 0 0 white; float:left; margin:-60px 40px 0; max-width:100%; padding:15px; position:relative; width:auto}
+.featured_article
+{
+	background:none repeat scroll 0 0 white; 
+	float:left; 
+	margin:-60px 40px 0; 
+	max-width:100%; 
+	padding:15px; 
+	position:relative; 
+	width:auto;
+}
 .article_category{float:left; display:inline; width:100%}
-.article_category > a{margin-right:2px}
-.article_category > a i{margin-right:2px}
-.article_titile{float:left; font-size:26px; line-height:1.5em; margin-top:11px; width:100%}
+.article
+{
+	color: #FC8467;
+	opacity: .8;
+}
+.article_category > a
+{
+	margin-right:2px;
+	color: #FC8467;
+}
+.article_category > a:hover
+{
+	color: #FC8467;
+	text-decoration: underline;
+	font-weight: normal;
+}
+.article_category > a i
+{
+	margin-right:2px;
+}
+.article_titile
+{
+	float:left; 
+	font-size:26px; 
+	line-height:1.5em; 
+	margin-top:11px; 
+	width:100%;
+	opacity: 0.8;
+}
+.article_titile a:hover
+{
+	color: #FC8467;
+	text-decoration: underline;
+	opacity: 2;
+}
 .pagination > li:first-child > a, .pagination > li:first-child > span{border-bottom-left-radius:0; border-top-left-radius:0}
 .pagination > li:last-child > a, .pagination > li:last-child > span{border-bottom-right-radius:0; border-top-right-radius:0}
-.pagination > li > a, .pagination > li > span{background-color:#333; border:1px solid #333; color:#fff; margin-right:2px}
+.pagination > li > a, .pagination > li > span
+{
+	background-color: #FC8467; 
+	border:1px solid #fff; 
+	color:#fff; 
+	margin-right:2px;
+}
 .custom-tabs{margin-top:30px; margin-left:-10px; width:108.1%; text-align:center}
 .custom-tabs li{float:none; display:inline-block}
 .custom-tabs li a{border-radius:0px; padding:10px 12px; margin-right:0px; color:#fff; border:none}
 .custom-tabs li a:hover{color:#fff !important}
 .tab-content{padding-top:20px}
-.cat-item{background:url("images/sidebar-bullet.png") no-repeat scroll 0 6px rgba(0,0,0,0); color:#444; font-family:arial; font-size:15px; margin-left:0; padding:1px 0 0 26px}
+
+.cat-item
+{
+	background:url("images/bullet.png") no-repeat scroll 0 6px rgba(0,0,0,0); 
+	color: #8E8A89; 
+	font-family: Century Gothic; 
+	font-size:15px; 
+	margin-left:0; 
+	padding: 1px 0 0 26px;
+}
+.cat-item a
+{
+	color: #8E8A89;
+}
 .single_widget ul li > a:hover{text-decoration:underline}
 .catgArchive{border:medium none; color:#fff; display:inline; float:left; font-weight:bold; padding:15px; width:100%}
 .catgArchive option{background-color:#fff; font-weight:normal; padding:5px}
@@ -394,7 +511,11 @@ figure.effect-lily a:hover img{-webkit-transform:translate3d(0,0,0); transform:t
 .middle_content > h2{width:107%}
 .slider_tittle{font-size:16px; line-height:20px; padding:5px}
 .single_iteam > h2{bottom:3%}
-.featured_article{padding:15px 10px; margin:-60px 30px 0}
+.featured_article
+{
+	padding:15px 10px; 
+	margin:-60px 30px 0;
+}
 .article_titile{font-size:14px; line-height:1.5em}
 .article_category > a{font-size:11px}
 .right_sidebar .custom-tabs{width:107%}
