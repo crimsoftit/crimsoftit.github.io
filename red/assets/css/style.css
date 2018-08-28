@@ -9,15 +9,27 @@ License: GPL
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 
-@font-face{font-family:"Arvo"; font-style:normal; font-weight:400; src:local("Arvo"), url("../fonts/arvo-400.woff") format("woff");}
-@font-face{font-family:"Allerta"; font-style:normal; font-weight:400; src:local("Allerta Regular"), local("Allerta-Regular"), url("../fonts/allerta-400.woff") format("woff");}
+@font-face
+{
+	font-family:"Century Gothic";
+	font-style:normal;
+	font-weight:400;
+	src:local("Arvo"), url("../fonts/arvo-400.woff") format("woff");
+}
+@font-face{font-family:"Century Gothic"; font-style:normal; font-weight:400; src:local("Allerta Regular"), local("Allerta-Regular"), url("../fonts/allerta-400.woff") format("woff");}
 
-body{background-color:#fff; color:#333; overflow-x:hidden !important}
+body
+{
+	background-color:#fff;
+	color:#333;
+	font-family: Century Gothic;
+	overflow-x:hidden !important
+}
 ul{padding:0; margin:0; list-style:none}
-a{text-decoration:none; color:#2f2f2f; font-family:'Allerta',Helvetica,Arial,sans-serif}
+a{text-decoration:none; color:#2f2f2f; font-family:'Century Gothic',sans-serif}
 a:hover{color:#646464; text-decoration:none}
 a:focus{outline:none; text-decoration:none}
-h1, h2, h3, h4, h5, h6{font-family:'Arvo',serif}
+h1, h2, h3, h4, h5, h6{font-family:'Century Gothic',serif}
 h2{line-height:23px}
 img{border:none}
 img:hover{opacity:0.75}
