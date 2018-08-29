@@ -1,5 +1,10 @@
 .scrollToTop{background-color:#FC8467; color:#fff}
-.scrollToTop:hover, .scrollToTop:focus{background-color:#fff; color:#12a3df; border-color:1px solid #12a3df}
+.scrollToTop:hover, .scrollToTop:focus
+{
+	background-color:#fff;
+	color:#12a3df; 
+	border-color:1px solid #CE1A1A;
+}
 #header
 {
 	background: none repeat scroll 0 0 #12a3df;
@@ -14,20 +19,39 @@
 	background-color: #CE1A1A; 
 	border-color: #CE1A1A;
 }
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{color:#12a3df}
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus{color:#12a3df}
-.dropdown-menu{background-color:#12a3df}
-.dropdown-menu li a:hover, .dropdown-menu li a:focus{color:#12a3df}
-.dropdown-menu li a:hover, .dropdown-menu li a:focus{color:#12a3df}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus
+{
+	color: #CE1A1A;
+	font-weight: bold;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus
+{
+	color: #CE1A1A;
+}
+.dropdown-menu 
+{
+	background-color: #CE1A1A;
+}
+.dropdown-menu li a:hover, .dropdown-menu li a:focus
+{
+	color: #CE1A1A;
+}
+.dropdown-menu li a:hover, .dropdown-menu li a:focus
+{
+	color: #CE1A1A;
+}
 .search_icon i
 {
 	color: #CE1A1A;
 }
 .search_bar
 {
-	border:2px solid #CE1A1A;
+	border: 2px solid #CE1A1A;
 }
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{background-color:#12a3df}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus
+{
+	background-color: #CE1A1A;
+}
 .single_widget > h2
 {
 	background-color: #CE1A1A;
@@ -68,8 +92,8 @@
 .pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus
 {
 	background-color: #CE1A1A;
-	color:#fff; 
-	border-color:#12a3df;
+	color: #fff; 
+	border-color: #CE1A1A;
 }
 .custom-tabs li a
 {
@@ -148,7 +172,11 @@
 .nav-growpop div p{color:#12a3df}
 .related_post > h2 i{color:#12a3df}
 .contact_area > h3:before{color:#12a3df}
-.contact_form input[type="submit"]:hover{background-color:#12a3df; border-color:#12a3df}
+.contact_form input[type="submit"]:hover
+{
+	background-color: #CE1A1A; 
+	border-color: #CE1A1A;
+}
 .contact_address > h3:before{color:#12a3df}
 .contact_address > h4:before{color:#12a3df}
 .copyright a:hover
