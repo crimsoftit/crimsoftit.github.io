@@ -18,6 +18,10 @@ body {
   color: gray;
   background: whitesmoke; }
 
+.logo_img {
+    max-width: 200px;
+}
+
 #page {
   position: relative;
   overflow-x: hidden;
