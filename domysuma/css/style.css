@@ -725,9 +725,10 @@ h1, h2, h3, h4, h5, h6, figure {
       padding: 4em 0; } }
 
 .colorlib-counters {
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center center; }
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center; 
+}
   .colorlib-counters .overlay {
     z-index: 0;
     position: absolute;
@@ -1177,7 +1178,7 @@ input[type="text"] {
         color: #fff;
         font-size: 20px; }
     #colorlib-footer .contact-information .info-wrap p {
-      font-size: 8px; }
+      font-size: 13px; }
     #colorlib-footer .contact-information .info-wrap a {
       color: rgba(255, 255, 255, 0.5); }
   @media screen and (max-width: 768px) {
@@ -1198,7 +1199,7 @@ input[type="text"] {
       display: block; }
       #colorlib-footer .colorlib-footer-links li span {
         display: block;
-        font-size: 13px; }
+        font-size: 11px; }
       #colorlib-footer .colorlib-footer-links li a {
         color: rgba(255, 255, 255, 0.9);
         text-decoration: none; }
